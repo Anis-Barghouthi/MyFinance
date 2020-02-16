@@ -15,5 +15,7 @@ namespace Domain
         public string UserName { get; set; }
         public DateTime DateCreated { get; set; }
         public bool IsApproved { get; set; }
+
+        public virtual ICollection<Product> Products { get; set; }
     }
 }
