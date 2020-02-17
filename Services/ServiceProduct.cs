@@ -1,4 +1,5 @@
-﻿using Domain;
+﻿using Data;
+using Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,14 +10,26 @@ namespace Services
 {
     public class ServiceProduct : IServiceProduct
     {
+        MyFinanceContext ctx;
+
+        public ServiceProduct()
+        {
+            ctx = new MyFinanceContext();
+        }
+
         public void AddProduct(Product p)
         {
-            throw new NotImplementedException();
+            ctx.Products.Add(p);
         }
 
         public void RemoveProduct(Product p)
         {
-            throw new NotImplementedException();
+            ctx.Products.Remove(p);
+        }
+
+        public void Commit()
+        {
+            ctx.SaveChanges();
         }
     }
 }
