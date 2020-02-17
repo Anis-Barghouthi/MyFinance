@@ -9,6 +9,6 @@ namespace Data
 {
     public class MyFinanceContext : DbContext
     {
-
+            
     }
 }
