@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Data.Custom_Conventions;
+using Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -21,5 +22,11 @@ namespace Data
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Provider> Providers { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Conventions.Add(new DateTimeconvention());
+            modelBuilder.Conventions.Add(new PrimaryKeyConvention());
+        }
     }
 }
