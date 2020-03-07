@@ -5,7 +5,7 @@ namespace Domain.Entities
 {
     public class Provider
     {
-        public int ProviderKey { get; set; }
+        public int Id { get; set; }
         public string ConfirmPassword { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
