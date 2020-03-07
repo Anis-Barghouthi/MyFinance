@@ -53,9 +53,9 @@
   <ItemGroup>
     <Compile Include="Custom Conventions\DateTimeconvention.cs" />
     <Compile Include="Custom Conventions\PrimaryKeyConvention.cs" />
-    <Compile Include="Migrations\202003071900377_CustomConventions.cs" />
-    <Compile Include="Migrations\202003071900377_CustomConventions.designer.cs">
-      <DependentUpon>202003071900377_CustomConventions.cs</DependentUpon>
+    <Compile Include="Migrations\202003071913156_InitialCommit.cs" />
+    <Compile Include="Migrations\202003071913156_InitialCommit.designer.cs">
+      <DependentUpon>202003071913156_InitialCommit.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyFinanceContext.cs" />
@@ -72,8 +72,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202003071900377_CustomConventions.resx">
-      <DependentUpon>202003071900377_CustomConventions.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202003071913156_InitialCommit.resx">
+      <DependentUpon>202003071913156_InitialCommit.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
